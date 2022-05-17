@@ -1,0 +1,50 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: ccc;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 35%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+  background-image: url(../image/overlay.png), url(../image/bg.jpg);
+  background-position: left top;
+  background-size: auto, auto;
+  text-align: right;
+}
+.main-header-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: larger;
+  line-height: 2;
+  font-weight: normal;
+}
+.main-header-title strong {
+  color: rgb(255, 255, 255, 1);
+  font-size: x-large;
+}
+.main-header-retirado {
+  color: rgba(0, 0, 0, 0.5);
+}
+.main-header-retirado-a {
+  color: inherit;
+  text-decoration: underline;
+}
+.main-header-retirado-a:hover {
+  color: white;
+}
+.main-main {
+  width: 65%;
+  margin-left: 35%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+  background-color: orange;
+  box-sizing: border-box;
+}

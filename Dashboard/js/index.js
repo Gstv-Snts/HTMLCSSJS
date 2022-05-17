@@ -3,35 +3,23 @@ const button = document.querySelector("button");
 const ulStart = document.getElementById("ul-start");
 const ulMiddle = document.getElementById("ul-middle");
 const ulEnds = document.getElementById("ul-end");
-const todos = [
-  {
-    start: [{ id: 0, todo: "Primeiro" }],
-    middle: [{ id: 1, todo: "Segundo" }],
-    end: [{ id: 2, todo: "Terceiro" }],
-  },
-];
+const todos = new Map();
 const fillTables = () => {
-  if (input.value !== "") {
-    todos[0].start.push({ id: todos[0].start.length, todo: input.value });
+  if (
+    input.value !== "" &&
+    todos[0].start.find((i) => i.todo === input.value) === undefined
+  ) {
+    todos.set({ id: todos[0].start.length, todo: input.value });
+    input.value = "";
   } else {
-    console.log("Is empty!");
+    console.log("Invalid todo!");
   }
-  ulStart.innerHTML = todos[0].start
-    .map(
-      (i) => `
-        <h1>${i.id}</h1>
+  ulStart.innerHTML = todos.map(
+    (i) => `
         <li>${i.todo}</li>
         <button id="${i.id}" onClick="deleteTodo(this.id)">Delete</button>
         `
-    )
-    .join("");
-  ulMiddle.innerHTML = todos[0].middle
-    .map(
-      (i) => `
-        <li>${i.todo}</li>
-        `
-    )
-    .join("");
+  );
 };
 
 fillTables();
@@ -43,15 +31,8 @@ button.addEventListener("click", () => {
 const deleteTodo = (id) => {
   console.log(todos[0].start);
   console.log(id);
-  if (id === 0) {
-    todos[0].start.shift();
-    console.log("Deletando o primeiro index!");
-  } else if (id === todos.length) {
-    todos[0].start.pop();
-    console.log("Deletando o ultimo index!");
-  } else {
-    todos[0].start.splice(id, 1);
-  }
+
+  todos = new Map();
   console.log(todos[0].start);
   fillTables();
 };
