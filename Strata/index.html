@@ -15,21 +15,21 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-img" href="index.html">
-        <img src="image/avatar.jpg" alt="Home" />
+      <a class="main-header-content" href="index.html">
+        <img class="main-header-img" src="image/avatar.jpg" alt="Home" />
       </a>
-      <p class="main-header-title">
+      <p class="main-header-title main-header-content">
         Mussum Ipsum, cacilds abertis.<br />
         <strong>Gustavo Santos</strong><br />
         Cevadis im ampola pa arma <br />
         umapindureta. Casamentiss faiz.
       </p>
-      <p class="main-header-retirado">
+      <p class="main-header-retirado main-header-content">
         Retirado de
         <a
           class="main-header-retirado-a"
@@ -44,53 +44,73 @@
         <h2>Conteudo principal!</h2>
         <p>
           Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma
-          uma<br />
-          pindureta.Casamentiss faiz <strong>Gustavo</strong> malandris se
-          pirulitá.Praesent malesuada urna<br />
-          nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Não
-          sou<br />
-          faixa preta cumpadi, sou preto inteiris, inteiris.
+          uma pindureta.Casamentiss faiz <strong>Gustavo</strong> malandris se
+          pirulitá.Praesent malesuada urna nisi, quis volutpat erat hendrerit
+          non. Nam vulputate dapibus.Não sou faixa preta cumpadi, sou preto
+          inteiris, inteiris.
         </p>
-        <a href="index.html">Learn more!</a>
+        <a class="button-default button-default-stroke" href="index.html"
+          >Veja mais</a
+        >
       </section>
       <section class="recent-works">
-        <h3>Recent Works</h3>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/01.jpg">
-            <img src="image/thumbs/01.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/02.jpg">
-            <img src="image/thumbs/02.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/03.jpg">
-            <img src="image/thumbs/03.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/04.jpg">
-            <img src="image/thumbs/04.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/05.jpg">
-            <img src="image/thumbs/05.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="recennt-works-article">
-          <a href="image/thumbs/06.jpg">
-            <img src="image/thumbs/06.jpg" />
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
+        <h3 class="recent-works-title">Recent Works</h3>
+        <div class="flexbox-container">
+          <article class="recent-works-article">
+            <a href="image/thumbs/01.jpg">
+              <img src="image/thumbs/01.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+          <article class="recent-works-article">
+            <a href="image/thumbs/02.jpg">
+              <img src="image/thumbs/02.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+          <article class="recent-works-article">
+            <a href="image/thumbs/03.jpg">
+              <img src="image/thumbs/03.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+          <article class="recent-works-article">
+            <a href="image/thumbs/04.jpg">
+              <img src="image/thumbs/04.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+          <article class="recent-works-article">
+            <a href="image/thumbs/05.jpg">
+              <img src="image/thumbs/05.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+          <article class="recent-works-article">
+            <a href="image/thumbs/06.jpg">
+              <img src="image/thumbs/06.jpg" />
+            </a>
+            <p>
+              Lorem ipsum dolor<br />
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </article>
+        </div>
 
         <a class="recent-works-a" title="Veja mais" href="index.html"
           >Vejo Portifólio completo</a
@@ -135,7 +155,7 @@
           <i>italic</i> and this is <em>emphasized</em>. This is
           <sup>superscript</sup> text and this is <sub>subscript</sub> text.
           This is <u>underlined</u> and this is
-          <code>code: for (;;) { ... }</code>. Finally this is
+          <code>console.log('Boa tarde!');</code>. Finally this is
           <a href="index.html">a link</a>
         </p>
         <h1>titulo h1</h1>
@@ -145,55 +165,77 @@
         <h5>titulo h5</h5>
         <h6>titulo h6</h6>
         <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce<br />
           facilisis leo at orci lobortis molestie. Vivamus ut massa magna.
         </blockquote>
         <pre>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-        facilisis leo at orci lobortis molestie. Vivamus ut massa magna.
+
+          const a = 'Oi!';
+          console.log(a);
         </pre>
-        <h3>Lista unordenada</h3>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-        <h3>Lista ordenada</h3>
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ol>
-        <h3>Alternate</h3>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-        <h3>icons</h3>
-        <i class="fa-solid fa-copy"></i>
-        <i class="fa-brands fa-twitch"></i>
-        <i class="fa-brands fa-accessible-icon"></i>
+      </section>
+      <section class="container">
+        <div class="column">
+          <h3>Lista desordenada</h3>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <h3>Lista ordenada</h3>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
+        <div class="column">
+          <h3>Alternate</h3>
+          <ul class="table-alternate">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <h3>icons</h3>
+          <i class="fa-solid fa-copy icon"></i>
+          <i class="fa-brands fa-twitch icon"></i>
+          <i class="fa-brands fa-accessible-icon icon"></i>
+        </div>
+      </section>
+      <section>
         <h3>Actions</h3>
         <p>
-          <a class="button-default">Default</a>
-          <a class="button-default button-default-stroke">Default</a>
-        </p>
-        <p>
-          <a class="button-default button-default-small">Default</a>
-          <a class="button-default button-default-stroke button-default-small"
+          <a href="index.html" class="button-default">ofkfeok</a>
+          <a href="index.html" class="button-default button-default-stroke"
             >Default</a
           >
         </p>
         <p>
-          <a class="button-default button-default-full button-default-small"
+          <a href="index.html" class="button-default button-default-small"
             >Default</a
           >
           <a
+            href="index.html"
+            class="button-default button-default-stroke button-default-small"
+            >Default</a
+          >
+        </p>
+        <p>
+          <a
+            href="index.html"
+            class="button-default button-default-full button-default-small"
+            >Default</a
+          >
+          <a
+            href="index.html"
             class="button-default button-default-stroke button-default-full button-default-small"
             >Default</a
           >
         </p>
+      </section>
+      <section>
+        <h3>Table</h3>
+        <h4>Default</h4>
         <table class="table">
           <thead>
             <tr>
@@ -234,7 +276,7 @@
           </tbody>
         </table>
         <h3>Alternate</h3>
-        <table class="table">
+        <table>
           <thead>
             <tr>
               <th>Name</th>
@@ -278,12 +320,25 @@
         </table>
         <h3>Buttons</h3>
         <p>
-          <button class="button-default">Default</button>
-          <button class="button-default button-default-stroke">Default</button>
+          <button onclick="alert('ekrfijkefijk')" class="button-default">
+            Default
+          </button>
+          <button
+            onclick="alert('ekrfijkefijk')"
+            class="button-default button-default-stroke"
+          >
+            Default
+          </button>
         </p>
         <p>
-          <button class="button-default button-default-small">Default</button>
           <button
+            onclick="alert('ekrfijkefijk')"
+            class="button-default button-default-small"
+          >
+            Default
+          </button>
+          <button
+            onclick="alert('ekrfijkefijk')"
             class="button-default button-default-stroke button-default-small"
           >
             Default
@@ -291,11 +346,13 @@
         </p>
         <p>
           <button
+            onclick="alert('ekrfijkefijk')"
             class="button-default button-default-full button-default-small"
           >
             Default
           </button>
           <button
+            onclick="alert('ekrfijkefijk')"
             class="button-default button-default-stroke button-default-full button-default-small"
           >
             Default
@@ -394,6 +451,22 @@
         </p>
       </section>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+      <p class="main-footer-content">
+        <a class="main-footer-icon" href="https://twitter.com">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        &nbsp; &nbsp; &nbsp;
+        <a class="main-footer-icon" href="https://www.facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </p>
+      <p class="main-footer-content">
+        © Untitle &nbsp; | &nbsp; Design:
+        <a class="main-footer-a" href="https://html5up.net/" target="_blank"
+          >HTML5 UP</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

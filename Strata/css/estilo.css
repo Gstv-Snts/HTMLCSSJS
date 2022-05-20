@@ -3,6 +3,92 @@ body {
   color: ccc;
   font-weight: normal;
   line-height: 2;
+  box-sizing: border-box;
+  width: 100%;
+}
+a {
+  transition: color 0.2s linear, border 0.2s linear;
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(50, 50, 50);
+  font-weight: normal;
+  margin: 0 0 1em;
+  display: block;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 15px;
+}
+
+p {
+  margin: 0 0 2em;
+}
+blockquote {
+  border-left: solid 10px rgba(200, 200, 200, 0.5);
+  padding-left: 40px;
+  margin: 2em 0;
+}
+code,
+pre {
+  border: solid 2px rgba(230, 230, 230, 0.5);
+  background-color: rgba(240, 240, 240, 0.5);
+  color: rgba(50, 50, 50, 0.5);
+  border-radius: 3%;
+  font-family: "Courier New";
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.table-alternate {
+  list-style-type: none;
+}
+.table-alternate li {
+  border-bottom: solid gray 3px;
+}
+
+.icon {
+  color: rgb(77, 196, 109);
+  font-size: xx-large;
+}
+
+.button-default {
+  background-color: rgb(114, 214, 124);
+  border: solid 0px;
+  border-radius: 6%;
+  padding: 15px 40px;
+  color: white;
+}
+.button-default-stroke {
+  background-color: white;
+  border: solid 2px rgb(100, 100, 100);
+  border-radius: 6%;
+  padding: 15px 40px;
+  color: black;
 }
 
 .main-header {
@@ -13,16 +99,20 @@ body {
   width: 35%;
   padding-top: 5%;
   padding-bottom: 5%;
+  margin-right: 80%;
   box-sizing: border-box;
   background-image: url(../image/overlay.png), url(../image/bg.jpg);
   background-position: left top;
-  background-size: auto, auto;
+  background-size: cover, cover;
   text-align: right;
+}
+.main-header-img {
+  border-radius: 50%;
 }
 .main-header-title {
   color: rgba(255, 255, 255, 0.5);
   font-size: larger;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: normal;
 }
 .main-header-title strong {
@@ -33,18 +123,111 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 .main-header-retirado-a {
-  color: inherit;
-  text-decoration: underline;
+  border-bottom: dotted 0.5px;
 }
 .main-header-retirado-a:hover {
   color: white;
+  border-bottom: dotted 0px;
 }
+.main-header-content {
+  padding-right: 8%;
+}
+article img {
+  border-radius: 4%;
+}
+table {
+  width: 95%;
+  border-spacing: 0;
+}
+table tr th {
+  text-align: start;
+}
+thead tr th {
+  background-color: rgb(200, 200, 200);
+  border-bottom: solid 2.5px rgb(100, 100, 100);
+}
+tbody tr th {
+  border-bottom: solid 1px rgb(100, 100, 100);
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(230, 230, 230);
+}
+tbody tr:last-child th {
+  border-bottom: solid 2.5px rgb(100, 100, 100);
+}
+
+form {
+  width: 100%;
+  display: block;
+}
+
+input[type="text"] {
+  display: block;
+  width: 95%;
+  margin-bottom: 30px;
+  height: 40px;
+  border: solid 3px rgb(220, 220, 220);
+  border-radius: 5px;
+  background-color: rgb(220, 220, 220);
+}
+select {
+  display: block;
+  width: 96%;
+  height: 40px;
+  background-color: rgb(220, 220, 220);
+  border: solid 3px rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+/* Main */
 .main-main {
   width: 65%;
   margin-left: 35%;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 4%;
-  background-color: orange;
+  background-color: white;
   box-sizing: border-box;
+}
+
+.recent-works {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexbox-container {
+  background-color: red;
+  display: flexbox;
+}
+
+/* Footer */
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 35%;
+  padding-bottom: 6%;
+  background-position: left bottom;
+  text-align: end;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+.main-footer-a {
+  border-bottom: dotted 0.5px;
+}
+.main-footer-a:hover {
+  color: white;
+  border-bottom: dotted 0px;
+}
+.main-footer-icon {
+  font-size: xx-large;
+  color: inherit;
+}
+.main-footer-icon:hover {
+  color: white;
+}
+.main-footer-content {
+  padding-right: 8%;
 }
