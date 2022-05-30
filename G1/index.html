@@ -5,82 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G1 Noticias</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/d107402895.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <img />
-        <span>MENU</span>
+      <nav class="header-nav">
+        <img
+          class="header-nav-img"
+          src="images/hamburger.png"
+          alt="hamburger"
+        />
+        <span class="header-nav-span">MENU</span>
       </nav>
-      <a><img /></a>
-      <input />
+      <a class="header-icon"><img src="images/g1.png" /></a>
+      <form class="header-form">
+        <label class="header-form-icon" for="buscar">
+          <img src="images/lupa.png" />
+        </label>
+        <input
+          id="buscar"
+          class="header-form-input"
+          type="search"
+          placeholder="BUSCAR"
+        />
+      </form>
     </header>
     <main>
-      <section>
-        <h1>AS MELHORES NOTICIAS DE HOJE</h1>
-        <article>
-          <h2>
+      <h1 class="main-title">AS MELHORES NOTICIAS DE HOJE</h1>
+      <section class="section-1">
+        <article class="section-1-article-1">
+          <h2 class="section-1-article-1-title">
             Lucro do FGTS será depositado nas constas hoje; veja como fica o
             rendimento
           </h2>
-          <p>
+          <p class="section-1-article-1-text">
             - caixa libera novos saques emergenciais do FGTS; veja calendário
           </p>
         </article>
-        <article>
-          <img />
-          <h2>
+        <article class="section-1-article-2">
+          <img class="section-1-article-2-img" />
+          <h2 class="section-1-article-2-title">
             VÍDEO: ladrão invade caminhão pela janela para roubar carga BR-040
           </h2>
         </article>
-        <article>
-          <img />
-          <h2>
+        <article class="section-1-article-3">
+          <img class="section-1-article-3-img" />
+          <h2 class="section-1-article-3-title">
             FOTOS: 'festival' de máscaras de Lady Gaga rouba a cena no VMA
           </h2>
         </article>
       </section>
-      <section>
-        <article>
-          <img />
-          <labe>Economia</labe>
-          <h2>Nota de R$ 200 será lançada na quarta, diz Banco Central</h2>
-          <p>
-            Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
-            unidades neste ano.
-          </p>
-          <span>Há 5 minutos - Em Economia</span>
+      <section class="section-2">
+        <article class="section-2-article">
+          <img src="images/notas.png" class="section-2-article-img" />
+          <div>
+            <label class="section-2-article-label">Economia</label>
+            <h2 class="section-2-article-title">
+              Nota de R$ 200 será lançada na quarta, diz Banco Central
+            </h2>
+            <p class="section-2-article-text">
+              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões
+              de unidades neste ano.
+            </p>
+            <span class="section-2-article-span"
+              >Há 5 minutos - Em Economia</span
+            >
+          </div>
         </article>
-        <article>
-          <img />
-          <labe>Economia</labe>
-          <h2>Nota de R$ 200 será lançada na quarta, diz Banco Central</h2>
-          <p>
-            Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
-            unidades neste ano.
-          </p>
-          <span>Há 5 minutos - Em Economia</span>
+        <article class="section-2-article">
+          <img src="images/notas.png" class="section-2-article-img" />
+          <div>
+            <label class="section-2-article-label">Economia</label>
+            <h2 class="section-2-article-title">
+              Nota de R$ 200 será lançada na quarta, diz Banco Central
+            </h2>
+            <p class="section-2-article-text">
+              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões
+              de unidades neste ano.
+            </p>
+            <span class="section-2-article-span"
+              >Há 5 minutos - Em Economia</span
+            >
+          </div>
         </article>
-        <article>
-          <img />
-          <labe>Economia</labe>
-          <h2>Nota de R$ 200 será lançada na quarta, diz Banco Central</h2>
-          <p>
-            Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
-            unidades neste ano.
-          </p>
-          <span>Há 5 minutos - Em Economia</span>
+        <article class="section-2-article">
+          <img src="images/notas.png" class="section-2-article-img" />
+          <div>
+            <label class="section-2-article-label">Economia</label>
+            <h2 class="section-2-article-title">
+              Nota de R$ 200 será lançada na quarta, diz Banco Central
+            </h2>
+            <p class="section-2-article-text">
+              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões
+              de unidades neste ano.
+            </p>
+            <span class="section-2-article-span"
+              >Há 5 minutos - Em Economia</span
+            >
+          </div>
         </article>
-        <a>VEJA MAIS</a>
+
+        <a class="section-2-a">VEJA MAIS</a>
       </section>
     </main>
     <footer>
-      <a><img /></a>
-      <h1>últimas notícias</h1>
-      <span>© Copyright 2000-2020 Globo Comunicação e Participações S.A.</span>
-      <span
-        >princípios editoriais | política de privacidade | minha conta |
-        anuncie</span
+      <div class="footer-div">
+        <a><img class="footer-g1" src="images/g1.png" /></a>
+        <h1 class="footer-title">últimas notícias</h1>
+      </div>
+      <span class="footer-span"
+        >© Copyright 2000-2020 Globo Comunicação e Participações S.A. princípios
+        editoriais | política de privacidade | minha conta | anuncie</span
       >
     </footer>
   </body>
