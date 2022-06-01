@@ -12,51 +12,55 @@
     ></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-
-  <!-- BODY -->
-
   <body>
-    <!-- HEADER -->
     <header>
-      <nav>
-        <img src="images/hamburger.png" alt="hamburger" />
-        <h4>MENU</h4>
+      <nav class="header-nav">
+        <img
+          class="header-nav-img"
+          src="images/hamburger.png"
+          alt="hamburger"
+        />
+        <span class="header-nav-span">MENU</span>
       </nav>
-      <a href="index.html"><img src="images/g1.png" alt="logo" /></a>
-      <form>
-        <img src="images/lupa.png" />
-        <input type="search" placeholder="BUSCAR" />
+      <a class="header-icon"><img src="images/g1.png" /></a>
+      <form class="header-form">
+        <label class="header-form-icon" for="buscar">
+          <img src="images/lupa.png" />
+        </label>
+        <input
+          id="buscar"
+          class="header-form-input"
+          type="search"
+          placeholder="BUSCAR"
+        />
       </form>
     </header>
-    <!-- MAIN -->
     <main>
-      <h2>AS MELHORES NOTICIAS DE HOJE</h2>
-      <!-- SECTION 1 -->
-      <section class="grid-container">
-        <article>
-          <h1 class="section-1-article-1-title">
-            Lucro do FGTS será nas constas hoje;<br />veja como fica o
+      <h1 class="main-title">AS MELHORES NOTICIAS DE HOJE</h1>
+      <section class="section-1">
+        <article class="section-1-article-1">
+          <h2 class="section-1-article-1-title">
+            Lucro do FGTS será depositado nas constas hoje; veja como fica o
             rendimento
-          </h1>
+          </h2>
           <p class="section-1-article-1-text">
             - caixa libera novos saques emergenciais do FGTS; veja calendário
           </p>
         </article>
-        <article>
-          <img src="images/caminhao.png" />
-          <h4 class="section-1-article-2-title">
+        <article class="section-1-article-2">
+          <img class="section-1-article-2-img" />
+          <h2 class="section-1-article-2-title">
             VÍDEO: ladrão invade caminhão pela janela para roubar carga BR-040
-          </h4>
+          </h2>
         </article>
-        <article>
-          <img src="images/gaga.png" />
-          <h4 class="section-1-article-3-title">
+        <article class="section-1-article-3">
+          <img class="section-1-article-3-img" />
+          <h2 class="section-1-article-3-title">
             FOTOS: 'festival' de máscaras de Lady Gaga rouba a cena no VMA
-          </h4>
+          </h2>
         </article>
       </section>
-      <!-- SECTION 2 -->
-      <section class="grid-container">
+      <section class="section-2">
         <article class="section-2-article">
           <img src="images/notas.png" class="section-2-article-img" />
           <div>
@@ -106,10 +110,9 @@
           </div>
         </article>
 
-        <a class="button"><h4>VEJA MAIS</h4></a>
+        <a class="section-2-a">VEJA MAIS</a>
       </section>
     </main>
-    <!-- FOOTER -->
     <footer>
       <div class="footer-div">
         <a><img class="footer-g1" src="images/g1.png" /></a>
