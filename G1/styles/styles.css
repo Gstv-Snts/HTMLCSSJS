@@ -8,38 +8,46 @@
 }
 @media (min-width: 1500px) and (max-width: 1700px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1300px) and (max-width: 1500px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (min-width: 900px) and (max-width: 1100px) {
   html {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 @media (min-width: 700px) and (max-width: 900px) {
   html {
-    font-size: 10px;
+    font-size: 8.3px;
   }
 }
 @media (min-width: 500px) and (max-width: 700px) {
   html {
-    font-size: 9px;
+    font-size: 6.4px;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   html {
-    font-size: 8px;
+    font-size: 3.6px;
   }
+}
+@media (min-width: 100px) and (max-width: 300px) {
+  html {
+    font-size: 1.7px;
+  }
+}
+a {
+  text-decoration: none;
 }
 h1,
 h2,
@@ -69,13 +77,14 @@ h4 {
 p,
 label,
 span {
-  font-size: 1.69rem;
+  font-size: 1.5rem;
   line-height: 2.06rem;
   font-weight: normal;
+  font-family: "Segoe UI";
 }
 
 nav {
-  width: fit-content;
+  width: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,16 +94,17 @@ nav {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #c4170c;
+  padding: 0 5.94rem;
 }
 header img {
-  width: 4.25rem;
+  width: 100%;
   max-width: 4.25rem;
 }
 nav img {
-  width: 40%;
+  width: 2.88rem;
   max-width: 46px;
 }
 form {
@@ -177,6 +187,8 @@ main h2 {
   grid-row-end: 3;
   color: #8b0000;
   padding-left: 2rem;
+  border: 0.06rem solid #707070;
+  border-radius: 0.24rem;
 }
 .grid-container:first-of-type article:first-child * {
   margin: 0;
@@ -188,6 +200,8 @@ main h2 {
 .grid-container:last-of-type article {
   display: flex;
   flex-direction: row;
+  padding-bottom: 5.63rem;
+  border-bottom: solid 0.15rem #707070;
 }
 .grid-container:last-of-type img {
   width: 50%;
@@ -223,5 +237,33 @@ main h2 {
 }
 
 footer {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: #c4170c;
+  padding-left: 6.38rem;
+  color: #ffffff;
+}
+footer img {
+  width: 100%;
+  max-width: 4.25rem;
+  margin-right: 2.25rem;
+}
+footer div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 2.25rem;
+  margin: 2.81rem 0;
+}
+footer div:last-of-type {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer div:last-of-type span {
+  font-size: 1.3rem;
 }
