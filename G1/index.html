@@ -10,10 +10,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <script
-      src="https://kit.fontawesome.com/d107402895.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
@@ -23,7 +19,16 @@
     <!-- HEADER -->
     <header>
       <nav>
-        <img src="images/hamburger.png" alt="hamburger" />
+        <details>
+          <summary>
+            <i class="fa-solid fa-bars"></i>
+          </summary>
+          <ul>
+            <a href="#section1"><li>Section 1</li></a>
+            <a href="#section2"><li>Section 2</li></a>
+            <a href="#footer"><li>Footer</li></a>
+          </ul>
+        </details>
         <h4>MENU</h4>
       </nav>
       <a href="index.html"><img src="images/Caminho 1.svg" alt="logo" /></a>
@@ -36,7 +41,7 @@
     <main>
       <h2>AS MELHORES NOTICIAS DE HOJE</h2>
       <!-- SECTION 1 -->
-      <section class="grid-container">
+      <section id="section1" class="grid-container">
         <article>
           <h1 class="section-1-article-1-title">
             Lucro do FGTS será nas constas hoje;<br />veja como fica o
@@ -60,7 +65,7 @@
         </article>
       </section>
       <!-- SECTION 2 -->
-      <section class="grid-container">
+      <section id="section2" class="grid-container">
         <article>
           <img src="images/notas.png" />
           <div>
@@ -109,7 +114,7 @@
       <a href="index.html" class="button"><h4>VEJA MAIS</h4></a>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer">
       <div class="footer-div">
         <a href="index.html"><img src="images/Caminho 1.svg" alt="logo" /></a>
         <h1 class="footer-title">últimas notícias</h1>

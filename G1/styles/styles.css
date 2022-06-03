@@ -83,6 +83,29 @@ span {
   font-family: "Segoe UI";
 }
 
+details summary {
+  list-style: none;
+}
+details {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+details ul {
+  height: fit-content;
+  background: #8b0000;
+  border: 0.06rem solid #707070;
+  border-radius: 0.5rem;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
 nav {
   width: 25%;
   display: flex;
@@ -103,9 +126,10 @@ header img {
   width: 100%;
   max-width: 4.25rem;
 }
-nav img {
-  width: 2.88rem;
+nav i {
+  font-size: 2.88rem;
   max-width: 46px;
+  margin-right: 0.5rem;
 }
 form {
   display: flex;
@@ -135,8 +159,10 @@ input::-webkit-search-cancel-button {
   -webkit-appearance: none;
   width: 1.25rem;
   height: 1.25rem;
-  background: url(../images/x-button.png);
-  background-size: contain;
+  background: url(../images/x-solid.svg);
+  background-repeat: no-repeat;
+  filter: invert(99%) sepia(6%) saturate(21%) hue-rotate(256deg)
+    brightness(105%) contrast(100%);
 }
 form img {
   width: 10%;
