@@ -30,11 +30,6 @@
   html {
     font-size: 10px;
   }
-  .grid-container:first-of-type {
-    height: 52.25rem;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50% 50%;
-  }
 }
 @media (min-width: 500px) and (max-width: 700px) {
   html {
@@ -71,14 +66,16 @@ h4 {
   font-size: 1.56rem;
   line-height: 2.06rem;
 }
-p {
+p,
+label,
+span {
   font-size: 1.69rem;
   line-height: 2.06rem;
   font-weight: normal;
 }
 
 nav {
-  width: 20%;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,7 +94,7 @@ header img {
   max-width: 4.25rem;
 }
 nav img {
-  width: 50%;
+  width: 40%;
   max-width: 46px;
 }
 form {
@@ -145,31 +142,33 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 3.25rem;
 }
 main h2 {
-  margin: 3.25rem 0;
+  margin-top: 3.25rem;
 }
 .grid-container {
+  height: fit-content;
   display: grid;
   width: 90%;
-  height: fit-content;
 }
 .grid-container:first-of-type {
-  height: 100%;
-  max-height: 51.88rem;
+  height: fit-content;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto auto;
   column-gap: 10%;
-  row-gap: 10%;
+  row-gap: 6.88rem;
 }
-.grid-container article {
+.grid-container:first-of-type h4 {
+  margin-bottom: 0;
+  margin-top: 0.81rem;
 }
 .grid-container:first-of-type article img {
   width: 100%;
   border: 0.06rem solid #707070;
   border-radius: 0.25rem;
 }
-.grid-container article:first-child {
+.grid-container:first-of-type article:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,7 +178,32 @@ main h2 {
   color: #8b0000;
   padding-left: 2rem;
 }
-.grid-container article:first-child * {
+.grid-container:first-of-type article:first-child * {
+  margin: 0;
+}
+
+.grid-container:last-of-type {
+  row-gap: 5.63rem;
+}
+.grid-container:last-of-type article {
+  display: flex;
+  flex-direction: row;
+}
+.grid-container:last-of-type img {
+  width: 50%;
+  margin-right: 3.25rem;
+}
+.grid-container:last-of-type h2 {
+  color: #c4170c;
+  margin-top: 0;
+  margin-bottom: 2.19rem;
+}
+.grid-container:last-of-type span {
+  display: block;
+  color: #746565;
+  margin-top: 2.19rem;
+}
+.grid-container:last-of-type p {
   margin: 0;
 }
 
@@ -192,7 +216,12 @@ main h2 {
   color: #ffffff;
   text-align: center;
   padding: 1.75rem 8.31rem;
+  margin: 9.25rem 0;
 }
 .button * {
   margin: 0;
+}
+
+footer {
+  background-color: #c4170c;
 }
