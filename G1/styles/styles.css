@@ -112,6 +112,12 @@ form {
   font-size: 1.56rem;
   line-height: 2.06rem;
 }
+form button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 input {
   width: 87%;
   background: transparent;
