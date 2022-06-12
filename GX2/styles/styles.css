@@ -1,0 +1,54 @@
+html {
+  font-size: 0.625vw;
+}
+body {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+.contato {
+  width: fit-content;
+  height: fit-content;
+  background-color: #10dfc2;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem 7rem;
+  color: #fbfbfb;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: inherit;
+}
+header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f6f6f7;
+}
+.logo {
+  width: 13.4rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #000000;
+}
+.section-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10rem 22.5rem;
+  width: 100%;
+  height: 50rem;
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  color: #fbfbfb;
+}
+.section-1:first-of-type img {
+  width: 6.6rem;
+}
