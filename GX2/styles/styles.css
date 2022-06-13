@@ -3,8 +3,52 @@ html {
 }
 body {
   font-family: "Montserrat";
-  font-weight: 900;
 }
+
+h1 {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.2rem;
+  line-height: 4.1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+p,
+span,
+li {
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+  font-weight: normal;
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: column;
+  width: 26.2rem;
+  height: 25rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px #00000029;
+}
+
+article i {
+  font-size: 2.7rem;
+  color: #0eafac;
+}
+article * {
+  padding: 0;
+  margin: 0;
+}
+
 .contato {
   width: fit-content;
   height: fit-content;
@@ -34,7 +78,7 @@ nav {
   align-items: center;
   flex-direction: row;
   gap: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.8rem;
   color: #000000;
 }
@@ -42,13 +86,85 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 10rem 22.5rem;
+  justify-content: center;
+  gap: 16.5rem;
   width: 100%;
   height: 50rem;
   background-image: url(../images/Background.png);
   background-size: cover;
   color: #fbfbfb;
 }
-.section-1:first-of-type img {
-  width: 6.6rem;
+
+.section-1-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6.966rem;
+}
+
+.rocketLogo {
+  width: 13.85rem;
+}
+.rocketTalentsLogo {
+  width: 33.2rem;
+}
+
+.section-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 14.5rem;
+  padding: 5rem 0;
+}
+.section-2 span {
+  font-weight: 600;
+  color: #0eafac;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-3 h2 {
+  color: #0eafac;
+}
+.section-3-p {
+  text-align: center;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.9rem;
+}
+
+.section-4-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 14.2rem;
+  padding: 7.5rem 0;
+}
+.section-4-5 img {
+  width: 29rem;
+}
+.section-4-5 div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-4-5 h2 {
+  color: #0eafac;
+}
+
+.section-4-5 ul {
+  list-style: disc;
 }
